@@ -10,7 +10,7 @@ metadata:
 
 # SUI
 
-Use this skill for SwiftUI implementation, refactoring, and review; apply these rules as project conventions, while still following any local `AGENTS.md` or user instructions that are more specific
+Use this skill for SwiftUI implementation, refactoring, and review; apply these rules as project conventions, while still following any local `AGENTS.md` or user instructions that are more specific. Always use it when working with Swift/SwiftUI projects
 
 ## Workflow
 
