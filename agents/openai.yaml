@@ -1,0 +1,7 @@
+interface:
+  display_name: "SUI"
+  short_description: "Guides SwiftUI work with modern APIs and project conventions"
+  default_prompt: "Use $sui when writing or reviewing SwiftUI code"
+
+policy:
+  allow_implicit_invocation: true
