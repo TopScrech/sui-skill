@@ -73,6 +73,7 @@ If SwiftData is configured with CloudKit:
 
 ## Swift And Foundation
 
+- Do not import Observation when Foundation or SwiftUI are already imported
 - Swift 6 language mode and strict Swift concurrency should be assumed
 - MainActor default isolation mode should be assumed, so functions and properties are `@MainActor` by default
 - All API calls must use async/await
