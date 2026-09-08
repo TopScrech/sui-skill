@@ -106,3 +106,7 @@ If SwiftData is configured with CloudKit:
 ## Output
 
 Keep output direct and actionable. When making code changes, summarize changed files, important behavior changes, and the build or test command that was run
+
+## Testing
+
+- Use only Swift Testing for Unit Tests
