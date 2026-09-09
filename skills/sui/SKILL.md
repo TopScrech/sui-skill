@@ -21,6 +21,8 @@ Use this skill for SwiftUI implementation, refactoring, and review; apply these 
 
 ## SwiftUI Style
 
+- Add blank lines between distinct view elements to improve readability and visual separation
+- Move chained modifiers to separate lines for better readability
 - Prefer SwiftUI-only solutions and avoid UIKit, AppKit, and Combine unless requested
 - Prefer no dots at the end of sentences in user-facing copy and comments
 - Do not introduce third-party frameworks without asking first
