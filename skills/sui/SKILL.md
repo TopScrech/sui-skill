@@ -15,9 +15,9 @@ Use this skill for SwiftUI implementation, refactoring, and review; apply these 
 ## Workflow
 
 1. Inspect the target project's deployment target, Swift language mode, dependencies, and local conventions before editing
-1. Prefer existing app structure, naming, view modifiers, and feature folders over adding new patterns
-1. Keep changes narrow and compile after significant implementation work
-1. If reviewing, report only genuine issues with file and line references, then give the smallest practical fix
+2. Prefer existing app structure, naming, view modifiers, and feature folders over adding new patterns
+3. Keep changes narrow and compile after significant implementation work
+4. If reviewing, report only genuine issues with file and line references, then give the smallest practical fix
 
 ## SwiftUI Style
 
