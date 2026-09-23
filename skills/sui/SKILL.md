@@ -98,6 +98,7 @@ If SwiftData is configured with CloudKit:
 - Build after significant changes so compile errors can be fixed
 - Build number `0` is acceptable; do not change it to `1`
 - Do not commit secrets or environment-specific files
+- .build should never be created in the project folder
 
 ## Git
 
