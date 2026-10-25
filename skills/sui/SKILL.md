@@ -28,7 +28,7 @@ Use this skill for SwiftUI implementation, refactoring, and review; apply these 
 - Do not introduce third-party frameworks without asking first
 - If ScrechKit is present, remember it imports SwiftUI and prefer modifiers such as `.hapticOn()`, `.title()`, `.secondary()`, and `.title(.secondary)`
 - SwiftUI imports Foundation, so do not add Foundation imports just for SwiftUI files
-- Prefer adaptive `.font()` fonts or ScrechKit equivalents over fixed font sizes
+- Prefer ScrechKit equivalents or adaptive `.font()` fonts over fixed font sizes
 - Do not force specific font sizes; prefer Dynamic Type
 - Avoid hard-coded padding and stack spacing unless requested or already established locally
 - Prefer static member lookup where possible, such as `.circle` rather than `Circle()` and `.borderedProminent` rather than `BorderedProminentButtonStyle()`
