@@ -30,7 +30,7 @@ Use this skill for SwiftUI implementation, refactoring, and review; apply these 
 - SwiftUI imports Foundation, so do not add Foundation imports just for SwiftUI files
 - Prefer ScrechKit equivalents or adaptive `.font()` fonts over fixed font sizes
 - Do not force specific font sizes; prefer Dynamic Type
-- Avoid hard-coded padding and stack spacing unless requested or already established locally
+- Avoid specifying hard-coded values for padding and stack spacing unless requested
 - Prefer static member lookup where possible, such as `.circle` rather than `Circle()` and `.borderedProminent` rather than `BorderedProminentButtonStyle()`
 - Use `foregroundStyle()` instead of `foregroundColor()`
 - Use `clipShape(.rect(cornerRadius:))` instead of `cornerRadius()`
@@ -56,10 +56,10 @@ Use this skill for SwiftUI implementation, refactoring, and review; apply these 
 
 ## State And Data Flow
 
-- For iOS 17 or later, prefer `@Observable` classes instead of `ObservableObject`
+- When targeting iOS 17 or later, never use `ObservableObject`; use `@Observable` classes instead
 - Place view logic into view models or similar testable types
-- Instead of dependency injection through subview initializers, pass view models to subviews using `@Environment` or `@EnvironmentObject`
-- Do not use `Binding(get:set:)` unless there is no readable alternative
+- Never pass view models as parameters; use the environment instead
+- Never use getter/setter bindings such as `Binding(get:set:)`
 - Avoid `onTapGesture()` unless the tap location or tap count is needed; use `Button` for ordinary actions
 - Prefer `Button("Title", systemImage: "symbol", action: action)` for image buttons and always include text
 - Prefer `Button(_:systemImage:action:)` over `Button(action:label:)` when it fits
@@ -72,6 +72,10 @@ If SwiftData is configured with CloudKit:
 - Never use `@Attribute(.unique)`
 - Model properties must have default values or be optional
 - Relationships must be optional
+
+## Localization
+
+- Do not localize strings in `Localizable.strings` that are marked as "Do not translate"
 
 ## Swift And Foundation
 
@@ -95,6 +99,8 @@ If SwiftData is configured with CloudKit:
 
 ## Build And Versioning
 
+- Always use Xcode's native MCP server for builds and reruns; use the rerun skill to preserve the current scheme and running or selected device
+- Never launch a simulator unless asked to do so
 - Build after significant changes so compile errors can be fixed
 - Build number `0` is acceptable; do not change it to `1`
 - Do not commit secrets or environment-specific files
